@@ -17,7 +17,7 @@
 <h3>1. Clone the repository:</h3>
 
 ```
-git clone https://github.com/ThomasJanssen-tech/Local-RAG-with-Ollama
+git clone https://github.com/DoriCavi/DoriCavi.github.io
 cd Local-RAG-With-Ollama
 ```
 
