@@ -4,3 +4,8 @@ __pycache__/
 /datasets
 /chroma_db
 snapshot.txt
+example_retriever.py
+example_chunking.py
+readme.md
+streamlit
+2_chunking_embedding_ingestion.py
