@@ -177,7 +177,7 @@ project/
 - Generates natural language answers
 - Runs locally on your computer
 
-### 4. User Interface (Streamlit)
+### 4. User Interface (Gradio)
 
 - Web-based chat interface
 - Shows questions and answers
@@ -274,7 +274,6 @@ llm = ChatOllama(model=os.getenv("CHAT_MODEL"), temperature=0.3)
 ## Requirements
 
 ```txt
-streamlit
 langchain
 langchain-chroma
 langchain-ollama
