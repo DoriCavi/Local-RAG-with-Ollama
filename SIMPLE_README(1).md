@@ -96,7 +96,7 @@ COLLECTION_NAME=apple_watch_guide
 ### Step 5: Run It
 
 ```bash
-python 3_chatbot.py
+python app.py
 ```
 
 Open your browser: http://localhost:7860
@@ -107,7 +107,7 @@ Open your browser: http://localhost:7860
 
 ```
 project/
-├── 3_chatbot.py           # Main code
+├── app.py           # Main code
 ├── UI.py                  # User interface
 ├── DocParsing.py          # Reads documents
 ├── .env                   # Settings
@@ -220,7 +220,7 @@ ollama pull nomic-embed-text
 **Fix:** Delete the database folder and restart:
 ```bash
 rm -rf ./chroma_db
-python 3_chatbot.py
+python app.py
 ```
 
 ### "Slow responses"
@@ -252,7 +252,7 @@ Replace `Apple Watch User Guide.md` with your own document.
 
 ### Change Number of Results
 
-In `3_chatbot.py`, find:
+In `app.py`, find:
 ```python
 docs = retrieve_documents(vector_store, embeddings, question, k=3)
 ```
@@ -261,7 +261,7 @@ Change `k=3` to `k=5` for more results.
 
 ### Change AI Temperature
 
-In `3_chatbot.py`, find:
+In `app.py`, find:
 ```python
 llm = ChatOllama(model=os.getenv("CHAT_MODEL"), temperature=0.3)
 ```
